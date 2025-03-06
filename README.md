@@ -42,7 +42,7 @@
 ### **💻 Installation Steps**  
 ```sh
 # Clone the repository
-git clone https://github.com/yourusername/Mudravani.git
+git clone https://github.com/krishang2205/Mudravani.git
 cd Mudravani
 
 # Install dependencies
