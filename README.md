@@ -1,7 +1,7 @@
 # **Mudravani - Sign Language to Speech Communication**  
 🚀 **Breaking Barriers in Communication with AI & WebRTC**  
 
-![Mudravani Banner](https://your-image-url.com) _(Replace with a real banner image if available)_  
+
 
 ## **🔹 About Mudravani**  
 **Mudravani** is an innovative real-time communication platform that empowers individuals who use **sign language** to communicate effortlessly. By leveraging **machine learning**, **WebRTC**, and **WebSockets**, it translates **sign language gestures into text and speech in real-time**, enabling smooth interaction with non-signing individuals.  
