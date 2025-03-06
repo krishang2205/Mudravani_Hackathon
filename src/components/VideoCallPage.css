@@ -1,0 +1,130 @@
+/* Global reset for video call page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* General video styling */
+video {
+    border-radius: 8px;
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    width: 100%;
+    height: 100%;
+}
+
+/* Page Container */
+.video-call-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Video Container - Flex layout for side-by-side videos */
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between videos */
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Max width to maintain proper scaling */
+    height: 500px; /* Fixed height for the video container */
+}
+
+/* Local Video Wrapper - Positioned in the top-left corner */
+.local-video {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* Video styling for both local and remote video */
+.video-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 8px;
+}
+
+/* Control Panel Styling */
+.control-panel {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+button {
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #1976d2;
+}
+
+/* End Call Button Styling */
+.end-call-btn {
+    background-color: #f44336;
+    font-weight: bold;
+}
+
+.end-call-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Disabled Button Styling */
+button:disabled {
+    background-color: #b0bec5;
+    cursor: not-allowed;
+}
+
+/* Button Active State */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .local-video {
+        top: 10px;
+        left: 10px;
+        width: 120px;
+        height: 90px;
+    }
+
+    .video-container {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .video-wrapper {
+        height: 400px; /* Adjust for mobile */
+    }
+}
